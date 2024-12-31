@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('/images/Ky nang hoc dai hoc.jpg'); /* Đường dẫn đến hình ảnh */
+    background-size: cover; /* Tự động co giãn hình ảnh để phù hợp */
+    background-position: center; /* Đặt vị trí hình ảnh ở giữa */
+    color: white;
+    padding: 10px;
+}
+
+.header-content {
+    display: flex;
+    width: 100%;
+}
+
+.menu-left, .menu-right {
+    flex: 1;
+    text-align: center;
+}
+
+.menu-left ul, .menu-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-left ul li, .menu-right ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.menu-left ul li a, .menu-right ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.avatar-section {
+    text-align: center;
+    padding-top: 20px; /* Khoảng cách giữa ảnh và phần tử phía trên */
+}
+
+.avatar {
+    width: 100px; /* Kích thước ảnh */
+    height: 100px;
+    border-radius: 50%; /* Làm tròn ảnh */
+    margin-top: 80%; /* Dịch ảnh xuống 20px (hoặc giá trị bạn mong muốn) */
+}
+
+.home {
+    width: 75%; /* Chiều rộng của phần chữ */
+    text-align: center; /* Căn giữa văn bản */
+    margin: 0 auto; /* Căn giữa phần tử .home */
+    padding-bottom: 40px; /* Khoảng cách 20px từ phần chữ đến phần panel (hình ảnh) */
+}
+
+.home h1, .home p {
+    margin-bottom: 10px; /* Khoảng cách giữa các phần tử chữ */
+}
+
+.post-grid {
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.post-card {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.post-list h1 {
+    text-align: center; /* Căn giữa theo chiều ngang */
+}
+
+.menu-left ul li a, .menu-right ul li a {
+    font-weight: bold;  /* In đậm */
+    font-size: 1.2rem;  /* Tăng kích thước chữ */
+}
+
+.image-circle {
+    border-radius: 50%; /* Làm tròn */
+    width: 32px; /* Kích thước nhỏ */
+    height: 32px;
+}
+
+.info {
+    text-align: left;
+    margin-left: 20px; /* Tùy chỉnh khoảng cách lề trái */
+}
+
+.info p {
+    margin: 5px 0; /* Giãn cách giữa các dòng */
+}

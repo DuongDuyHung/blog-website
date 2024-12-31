@@ -1,0 +1,19 @@
+baseURL = "http://example.com/"
+languageCode = "en-us"
+title = "Blog của Hưng"
+theme = "custom-theme"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "About"
+  url = "/single/"
+  weight = 2
+
+  [[menu.main]]
+  name = "Post"
+  url = "/post/"
+  weight = 3
