@@ -1,5 +1,5 @@
 [build]
-  base = "BLOG" # Chỉ định thư mục gốc
+  base = "blog" # Chỉ định thư mục gốc
   command = "hugo"
   publish = "public"
 
