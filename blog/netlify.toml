@@ -1,0 +1,7 @@
+[build]
+  base = "BLOG" # Chỉ định thư mục gốc
+  command = "hugo"
+  publish = "public"
+
+[context.production.environment]
+  HUGO_VERSION = "0.115.0" # Thay bằng phiên bản Hugo bạn sử dụng
