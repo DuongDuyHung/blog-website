@@ -1,3 +1,4 @@
+/* Body styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,13 +8,14 @@ body {
     color: #333;
 }
 
+/* Header styling */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url('/images/Ky nang hoc dai hoc.jpg'); /* Đường dẫn đến hình ảnh */
-    background-size: cover; /* Tự động co giãn hình ảnh để phù hợp */
-    background-position: center; /* Đặt vị trí hình ảnh ở giữa */
+    background-image: url('/images/Ky nang hoc dai hoc.jpg');
+    background-size: cover;
+    background-position: center;
     color: white;
     padding: 10px;
 }
@@ -41,37 +43,90 @@ body {
 .menu-left ul li a, .menu-right ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
+/* Avatar section styling */
 .avatar-section {
     text-align: center;
-    padding-top: 20px; /* Khoảng cách giữa ảnh và phần tử phía trên */
+    padding-top: 20px;
 }
 
 .avatar {
-    width: 100px; /* Kích thước ảnh */
+    width: 100px;
     height: 100px;
-    border-radius: 50%; /* Làm tròn ảnh */
-    margin-top: 50%; /* Dịch ảnh xuống 20px (hoặc giá trị bạn mong muốn) */
+    border-radius: 50%;
+    margin-top: 20px;
 }
 
+/* About panel styling */
+.about-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+.title h1 {
+    text-align: center;
+}
+
+/* Certificates section */
+.certificates {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.certificate-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.certificate {
+    text-align: center;
+    max-width: 200px;
+    flex: 1 1 calc(33.333% - 20px);
+}
+
+.certificate img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.certificate p {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Home section styling */
 .home {
-    width: 75%; /* Chiều rộng của phần chữ */
-    text-align: center; /* Căn giữa văn bản */
-    margin: 0 auto; /* Căn giữa phần tử .home */
-    padding-bottom: 30px; /* Khoảng cách 20px từ phần chữ đến phần panel (hình ảnh) */
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 .home h1, .home p {
-    margin-bottom: 10px; /* Khoảng cách giữa các phần tử chữ */
+    margin-bottom: 10px;
 }
 
+/* Post grid styling */
 .post-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Chia thành 3 cột bằng nhau */
-    gap: 20px; /* Khoảng cách giữa các bài post */
-    padding: 0 20px; /* Đảm bảo khoảng cách hai bên lề trái và phải của bài post bằng nhau */
-    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước tổng */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .post-card {
@@ -79,47 +134,68 @@ body {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    display: flex; /* Sử dụng flexbox để căn chỉnh */
-    flex-direction: column; /* Sắp xếp nội dung theo cột */
-    justify-content: space-between; /* Giữ khoảng cách hợp lý giữa các phần tử bên trong */
-    height: 100%; /* Đảm bảo chiều cao đồng đều */
-    min-height: 350px; /* Đặt chiều cao tối thiểu */
-    box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước tổng */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 350px;
+    box-sizing: border-box;
 }
 
 .post-list h1 {
-    text-align: center; /* Căn giữa theo chiều ngang */
-}
-
-.menu-left ul li a, .menu-right ul li a {
-    font-weight: bold;  /* In đậm */
-    font-size: 1.2rem;  /* Tăng kích thước chữ */
-}
-
-.image-circle {
-    border-radius: 50%; /* Làm tròn */
-    width: 32px; /* Kích thước nhỏ */
-    height: 32px;
-}
-
-.info {
     text-align: center;
-    margin-left: 20px; /* Tùy chỉnh khoảng cách lề trái */
 }
 
-.info p {
-    margin: 5px 0; /* Giãn cách giữa các dòng */
-}
-.about-container {
-    width: 33.33%; /* Giới hạn chiều rộng bằng 1/3 trang */
-    margin: 0 auto; /* Căn giữa nội dung */
-    text-align: justify; /* Căn đều hai bên */
-    padding: 20px; /* Thêm khoảng cách bên trong */
-    background-color: #ffffff; /* Tùy chọn: thêm màu nền */
-    border-radius: 10px; /* Tùy chọn: bo góc */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tùy chọn: thêm đổ bóng */
+.contact {
+    margin-top: 30px;
 }
 
-.title h1 {
-    text-align: center; /* Căn giữa theo chiều ngang */
+.contact h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin: 10px 0;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.social-links img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Thêm CSS để các icon nằm ngang và căn chỉnh */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Căn giữa các icon */
+    gap: 20px; /* Khoảng cách giữa các icon */
+    margin-top: 20px; /* Khoảng cách trên các icon */
+}
+
+.social-icons a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+}
+
+.social-icons img {
+    width: 50px; /* Kích thước các icon giảm xuống một nửa */
+    height: 50px; /* Kích thước các icon giảm xuống một nửa */
+    transition: transform 0.3s; /* Hiệu ứng khi hover */
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Phóng to icon khi hover */
 }

@@ -1,4 +1,3 @@
-
 {{ define "main" }}
 <article class="about-container">
     <header class="title">
@@ -6,6 +5,40 @@
     </header>
     <main>
         {{ .Content }}
+        <section class="certificates">
+            <h2>Chứng chỉ</h2>
+            <div class="certificate-list">
+                <div class="certificate">
+                    <img src="/images/chungchi1.png" alt="Networking Basic">
+                    <p>Chứng chỉ Networking Basic</p>
+                </div>
+                <div class="certificate">
+                    <img src="/images/chungchi2.png" alt="Javascrip essentials 1">
+                    <p>Chứng chỉ Javascrip essentials 1</p>
+                </div>
+                <div class="certificate">
+                    <img src="/images/chungchi3.png" alt="Javascrip essentials 2">
+                    <p>Chứng chỉ Javascrip essentials 2</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thêm phần Liên hệ -->
+        <section class="contact">
+            <h2>Liên hệ</h2>
+            <p>Bạn có thể liên hệ với tôi qua các mạng xã hội dưới đây:</p>
+            <div class="social-icons">
+                <a href="https://web.facebook.com/anhdethuong111" target="_blank" title="Facebook">
+                    <img src="/images/fb.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/hung.unila/" target="_blank" title="Instagram">
+                    <img src="/images/ins.jpg" alt="Instagram">
+                </a>
+                <a href="https://github.com/DuongDuyHung/blog-website" target="_blank" title="GitHub">
+                    <img src="/images/git.jpg" alt="GitHub">
+                </a>
+            </div>
+        </section>
     </main>
 </article>
 {{ end }}

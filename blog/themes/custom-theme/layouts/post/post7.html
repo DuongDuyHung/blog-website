@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xử lý ngoại lệ trong Java</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <article>
+        <h1>Xử lý ngoại lệ trong Java</h1>
+        <p>Xử lý ngoại lệ là một phần quan trọng trong lập trình Java. Nó giúp chương trình của bạn tiếp tục chạy mặc dù có lỗi xảy ra.</p>
+        <p>Cấu trúc cơ bản để xử lý ngoại lệ:</p>
+        <pre>
+<code>
+try {
+    int result = 10 / 0;  // gây ra lỗi chia cho 0
+} catch (ArithmeticException e) {
+    System.out.println("Lỗi: " + e.getMessage());
+}
+</code>
+        </pre>
+    </article>
+</body>
+</html>

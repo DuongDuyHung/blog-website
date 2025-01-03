@@ -1,5 +1,6 @@
 ---
 title: "Giới thiệu"
+layout: "single"
 ---
 
 Họ tên: Dương Duy Hưng  
@@ -19,4 +20,5 @@ Mình đã có một thời gian dài tìm hiểu về Java, từ những khái 
 
 Mục tiêu của tôi là không chỉ học hỏi mà còn truyền đạt lại những gì mình đã biết để tạo ra một cộng đồng lập trình viên ngày càng phát triển.  
 
-Mong rằng những chia sẻ của tôi sẽ hữu ích cho các bạn trong việc phát triển sự nghiệp lập trình và khám phá những khả năng mới mẻ trong lĩnh vực công nghệ.
+Mong rằng những chia sẻ của tôi sẽ hữu ích cho các bạn trong việc phát triển sự nghiệp lập trình và khám phá những khả năng mới mẻ trong lĩnh vực công nghệ.  
+
